@@ -1,0 +1,579 @@
+body {
+    font-family: tahoma;
+}
+
+#main-container {
+    /* margin-top: -19px; */
+}
+
+#main-content {
+    margin-left: 165px;
+}
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+#banner_img,
+#chat_background_img,
+#radio_stream_on_img,
+#radio_stream_off_img,
+#interface_background_img {
+    height: 94px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    width: 150px;
+    max-width: 150px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #789;
+    border-right: 1px solid #eee;
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+    color: #fff;
+}
+.nav-sidebar > li > a:hover {
+    background-color: rgba(255,255,255, 0.2);
+    color: #555;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/*********************************************************************************************/
+table thead  tr {
+    border-top: 1px solid #ccc;
+}
+
+table thead  tr th {
+    border: 1px solid #ccc;
+    background-color: #8FA3B7;
+    color: #fff;
+}
+
+table td {
+    min-width: 180px;
+    border: 1px solid #ccc;
+}
+
+table td.center {
+    text-align: center;
+}
+
+
+table tbody tr {
+    transition: background-color 0.3s;
+}
+
+table tbody tr.succeeded {
+    background-color: #cdfad1 !important;
+}
+
+table tbody tr select {
+    outline: none;
+}
+
+table tbody tr.allowed,
+table tbody tr.allowed select {
+    border: 1px solid #00bb08;
+    color: #00bb08;
+    font-weight: bold;
+}
+
+table tbody tr.denied,
+table tbody tr.denied select {
+    border: 1px solid #FF5722;
+    color: #FF5722;
+    font-weight: bold;
+}
+
+table tbody tr.controlled,
+table tbody tr.controlled select {
+    border: 1px solid #03A9F4;
+    color: #03A9F4;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 3px 15px;
+}
+
+p {
+    margin: 0;
+}
+
+select {
+    height: 28px;
+}
+
+.form-group label {
+    background-color: #8FA3B7;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+
+.form-group input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    vertical-align: top;
+}
+
+.form-group textarea {
+    vertical-align: top;
+    min-width: 235px;
+    min-height: 100px;
+}
+
+
+/**
+* Reg Page
+*/
+
+#reg-search {
+    margin: 5px;
+}
+
+.reg-page #reg-search input[type="saerch"] {
+    width: 215px;
+}
+
+.reg-page #reg-search table td:nth-child(5) {
+    min-width: 50px;
+    width: 50px;
+    text-align: center;
+}
+
+/**
+* Events Page
+*/
+
+#events-search,
+#events-filter {
+    margin: 5px;
+}
+.events-page #events-search input[type="saerch"] {
+    width: 215px;
+}
+
+/**
+* users Page
+*/
+
+.users-page .section1 {
+    padding: 5px;
+    max-width: 100%;
+}
+
+#users-search,
+#users-filter {
+    margin: 5px;
+}
+
+/**
+* Virtual Users
+*/
+
+.change_user_country {
+    max-width: 150px;
+}
+
+.user_avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid #ccc;
+
+}
+
+/**
+* Subscriptions Page
+*/
+.subscriptions-page td button {
+    padding: 4px;
+}
+
+.subscriptions-page .finishes.green {
+    color: green;
+}
+
+.subscriptions-page .finishes.orange {
+    color: orange;
+}
+
+.subscriptions-page .finishes.red {
+    color: red;
+}
+
+.subscriptions-page .permanent_subscription,
+.users-page .is_trusted,
+.users-page .royal_login,
+.filter-page .is_notification_enabled {
+    width: 18px;
+    height: 18px;
+}
+
+/**
+* Rooms Page
+*/
+
+#main-content.rooms-page {
+    margin-left: 155px;
+}
+
+.rooms-page .section1 {
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #999;
+}
+
+.rooms-page table tr td:first-child {
+    width: 25px;
+    max-width: 25px;
+}
+
+.rooms-page table tr td:first-child input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    opacity: .7;
+}
+
+table td {
+    min-width: auto;
+}
+
+.table-header {
+
+}
+
+.table-header ul {
+    list-style: none;
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+
+.table-header ul li {
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    padding: 0;
+}
+
+.table-header ul li a,
+.table-header ul li a:active {
+    padding: 3px 5px;
+    border: 1px solid #ccc;
+    text-decoration: none;
+}
+
+.table-header ul li a:hover {
+    opacity: 0.8;
+}
+
+.table-header ul li.green a {
+    border: 1px solid #00bb08;
+    color: #00bb08;
+}
+
+.table-header ul li.red a {
+    border: 1px solid #F44336;
+    color: #F44336;
+}
+
+.table-header ul li.blue a {
+    border: 1px solid #03A9F4;
+    color: #03A9F4;
+}
+
+.rooms-page .room-flag {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid #ccc;
+
+}
+
+.rooms-page .room-flag:hover {
+    opacity: 0.8;
+    border-color: #555;
+}
+
+/**
+* Banneds Page
+*/
+#clear-banneds {
+    margin: 5px;
+}
+
+#ban-search {
+    margin: 5px;
+    margin-bottom: 0;
+}
+
+/**
+* Privileges Page
+*/
+.privileges-page {
+    padding-top: 5px;
+}
+
+.privileges-page #select-role {
+    min-width: 150px;
+    margin-bottom: 5px;
+}
+
+#upgradable_roles,
+#can_see_hidden {
+    border: 1px solid #ccc;
+    padding: 5px 5px 0 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#upgradable_roles .role,
+#can_see_hidden .role {
+    display: inline-block;
+    margin-bottom: 3px;
+    direction: rtl;
+}
+
+#upgradable_roles label,
+#can_see_hidden label {
+    min-width: 110px;
+    color: #555;
+    background-color: #d5bdff !important;
+}
+
+#role_icon {
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    padding: 2px;
+    cursor: pointer;
+}
+
+#role_icon:hover {
+    background-color: #eee;
+}
+
+/**
+* Filter Page
+*/
+#main-content.filter-page table td {
+    min-width: 80px;
+    width: 80px;
+}
+
+#filter-add {
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+#filter-add input {
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+#filter-filter {
+    margin: 5px 0;
+}
+
+/**
+* Filtered Words Page
+*/
+#filtered-words-search {
+    margin: 5px;
+}
+
+#filtered-words-filter {
+    margin: 5px;
+}
+
+/**
+* Settings Page
+*/
+.settings-page {
+    padding: 5px;
+}
+
+.settings-page h1, h3 {
+    font-size: 2.5rem;
+    background-color: rgb(159, 201, 207);
+    padding: 5px;
+    margin-top: 0;
+    color: #666;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.settings-page textarea {
+    width: 400px;
+}
+
+.settings-page .section {
+    background-color: #f9f9f9;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #888;
+}
+
+.settings-page button {
+    margin-bottom: 5px;
+}
+
+#admin-settings-general-default-avatar_img,
+#admin-settings-general-default-room-flag_img,
+#admin-settings-general-btn-bg_img  {
+    border-radius: 50%;
+    padding: 1px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+
+/**
+* Gifts and Faces Page
+*/
+.gifts-and-faces-page p label,
+.btn-bgs-page p label {
+    width: 100px;
+    text-align: center;
+    background-color: #d5bdff;
+    padding: 2px 5px;
+    vertical-align: middle;
+    border-radius: 3px;
+    color: #444;
+}
+
+.gifts-and-faces-page .img-container,
+.btn-bgs-page .img-container {
+    border: 1px solid #ccc;
+    width: 470px;
+    min-height: 50px;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.gifts-and-faces-page .img-container .btn {
+    margin: 0 0px !important;
+}
+
+.btn-bgs-page .img-container {
+    width: 400px;
+}
+
+.gifts-and-faces-page .img-container .item,
+.btn-bgs-page .img-container .item {
+    display: inline-block;
+    padding: 3px;
+    padding-left: 0;
+    border: 1px solid #ccc;
+}
+
+.gifts-and-faces-page .img-container .item img,
+.btn-bgs-page .img-container .item img {
+    width: 25px;
+    height: 25px;
+}
+
+.btn-bgs-page .img-container .item img {
+    width: 70px;
+}
+
+.gifts-and-faces-page .img-container .item button,
+.btn-bgs-page .img-container .item button {
+    padding: 0 5px;
+    margin: 0;
+    margin-left: -5px;
+}
+
+.jscolor {
+    width: 70px;
+    text-align: center;
+}
