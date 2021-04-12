@@ -1,0 +1,391 @@
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    padding-top: 50px;
+    font-family: tahoma;
+}
+
+.clear {
+    clear: both;
+}
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+    border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+    display: none;
+}
+@media (min-width: 768px) {
+    .sidebar {
+        position: fixed;
+        top: 51px;
+        bottom: 0;
+        left: 0;
+        z-index: 1000;
+        display: block;
+        padding: 20px;
+        overflow-x: hidden;
+        overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+        background-color: #f5f5f5;
+        border-right: 1px solid #eee;
+    }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+    margin-right: -21px; /* 20px padding + 1px border */
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+.nav-sidebar > li > a {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+    color: #fff;
+    background-color: #428bca;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+    padding: 20px;
+}
+@media (min-width: 768px) {
+    .main {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+}
+.main .page-header {
+    margin-top: 0;
+}
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.placeholders h4 {
+    margin-bottom: 0;
+}
+.placeholder {
+    margin-bottom: 20px;
+}
+.placeholder img {
+    display: inline-block;
+    border-radius: 50%;
+}
+
+/************************************* Customed Dashboard ************************************************/
+
+#admin-login {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 15px #ccc;
+    margin-top: 50px;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 0 15px #ccc;
+}
+
+#navbar ul li a,
+#navbar ul li a:visited  {
+    font-family: arial;
+    color: #fff;
+    transition: all 0.3s;
+    font-weight: bold;
+    font-size: 1.2em;
+    border-radius: 10%;
+    padding: 10px;
+    margin-top: 4px;
+    margin-right: 5px;
+}
+
+#navbar ul li a:hover {
+    color: #999;
+}
+
+.navbar #app-logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: #777;
+    font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.navbar #app-logo span {
+    color: #66A523;
+}
+
+.navbar .navbar-toggle,
+.navbar .navbar-toggle span {
+    border: 1px solid #777;
+}
+
+.navbar .navbar-toggle:hover,
+.navbar .navbar-toggle:focus {
+    background-color: #eee;
+}
+
+.sidebar {
+    background-color: #515151;
+    border: none;
+    font-family: tahoma;
+}
+
+.sidebar .nav-sidebar li {
+    border-bottom: 1px solid #666;
+}
+
+.sidebar .nav-sidebar li a,
+.sidebar .nav-sidebar li a:visited {
+    color: #ccc;
+}
+
+.sidebar .nav-sidebar li a:hover,
+.sidebar .nav-sidebar li a:visited,
+.sidebar .nav-sidebar li.active {
+    background-color: #373737;
+    color: #eee;
+}
+
+.sidebar .nav-item-icon {
+    margin-right: 10px;
+}
+
+.sidebar .nav-right-arrow {
+    float: right;
+    margin-right: -15px;
+    font-size: 0.8em;
+    line-height: 1.8em;
+}
+
+.placeholders .placeholder .img-responsive {
+    background-color: #fff;
+    box-shadow: 0 0 5px #ccc;
+    height: 300px;
+}
+
+/**
+* Users page styles
+*/
+.section1,
+.section2 {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 10px #ddd;
+}
+
+.section1 {
+    margin-bottom: 25px;
+}
+
+.section2 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+}
+
+.section2 ul li {
+    display: inline-block;
+}
+
+.section2 .left-section,
+.section2 .right-section {
+    display: inline-block;
+    font-family: tahoma;
+    font-size: 13px;
+}
+
+.section2 .left-section ul li a {
+    padding: 0 5px;
+    border-right: 1px solid gray;
+    color: #48a6d8;
+}
+.section2 .left-section ul li:nth-child(3) a,
+.section2 .left-section ul li:nth-child(4) a {
+    border-right: 0;
+}
+
+#users-save-changes,
+#rooms-save-changes,
+#banneds-save-changes,
+#self-messages-save-changes {
+    border-right: 0;
+    padding: 3px 7px;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.section2 .right-section {
+    float: right;
+}
+
+.section2 .right-section ul li a {
+    border-left: 1px solid gray;
+    padding: 0 5px;
+    color: #48a6d8;
+}
+
+.section2 .right-section ul li:last-child a {
+    border: 0;
+}
+
+#users-search-form,
+#banneds-search-form,
+#rooms-search-form,
+#self-messages-search-form {
+    margin-top: 5px;
+}
+
+#self-messages-search-form input[type="search"],
+#users-search-form input[type="search"],
+#banneds-search-form input[type="search"],
+#rooms-search-form input[type="search"] {
+    width: 73%;
+    border: 1px solid gray;
+    border-radius: 2px;
+    padding: 7px 8px;
+}
+
+input[type="search"] {
+    width: 70% !important;
+}
+
+.pagination {
+    margin: 15px 0;
+    vertical-align: middle;
+}
+
+.pagination li a {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 27px;
+}
+
+.table tbody tr td input[type="checkbox"] {
+    width: 17px;
+    height: 17px;
+}
+
+.table tbody tr td .wall-add-action,
+.table tbody tr td .rooms-add-action {
+    color: #fff;
+    background-color: #56A556;
+    padding: 0px 7px 5px 5px;
+    border-radius: 3px;
+}
+
+.table tbody tr td .wall-remove-action,
+.table tbody tr td .rooms-remove-action {
+    color: #fff;
+    background-color: #E06767;
+    padding: 0px 7px 5px 5px;
+    border-radius: 3px;
+}
+
+.table tbody tr td .rooms-edit-action {
+    color: #fff;
+    background-color: orange;
+    padding: 0px 7px 5px 5px;
+    border-radius: 3px;
+}
+
+.popup {
+    display: none;
+}
+
+.popup.displayed {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 80, 80, 0.5);
+    z-index: 2000;
+}
+
+.popup form {
+    width: 50%;
+    padding: 20px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px;
+    margin: 150px auto;
+    border-radius: 5px;
+}
+
+table tbody td input {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+    padding: 2px 5px;
+    width: 100px;
+}
+
+.section {
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    font-family: tahoma;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.status-running {
+    border: 1px solid green;
+    color: green;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    outline: none;
+}
+
+.status-paused {
+    border: 1px solid orange;
+    color: orange;
+    padding-bottom: 3px;
+    padding-left: 2px;
+    outline: none;
+}
+
+
+@media screen AND (max-width: 768px) {
+    .sidebar.displayed {
+        display: block;
+    }
+}
